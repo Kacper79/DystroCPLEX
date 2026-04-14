@@ -2,9 +2,9 @@
 To repozytorium implementuje w narzedziu CPLEX (w C++ z wykorzystaniem Concert API) problem "Distribution 1" z ksiazki Williamsa (rozdzialy 12.19, 13.19, 14.19).
 
 # Pobieranie
-git clone https://github.com/Kacper79/DystroCPLEX.git
+```git clone https://github.com/Kacper79/DystroCPLEX.git```
 
-cd DystroCPLEX
+```cd DystroCPLEX```
 
 # Budowanie
 Wazne jest aby w pliku CMakeLists.txt ustawic sobie prawidlowa sciezke do folderu gdzie zostal zainstalowany CPLEX na komputerze lokalnym
@@ -14,6 +14,6 @@ gdzie sciezka (na Windowsie) musi byc podawana ze slashami zwyklymi (/) a nie od
 
 Jezeli wersje CPLEX sie roznia, trzeba zmienic nazwe biblioteki w pliku CMakeLists przy podpinaniu bibliotek (.dll) np. zmienic na starsza wersje z cplex2212 na cplex2211 (jak w pracowni UKSW)
 
-cmake -S . -B build
+```cmake -S . -B build```
 
-cmake --build build --config Release
+```cmake --build build --config Release```
