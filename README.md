@@ -3,12 +3,17 @@ To repozytorium implementuje w narzedziu CPLEX (w C++ z wykorzystaniem Concert A
 
 # Pobieranie
 git clone https://github.com/Kacper79/DystroCPLEX.git
+
 cd DystroCPLEX
 
 # Budowanie
 Wazne jest aby w pliku CMakeLists.txt ustawic sobie prawidlowa sciezke do folderu gdzie zostal zainstalowany CPLEX na komputerze lokalnym
 
-```set(CPLEX_ROOT_PATH "nowa_sciezka_do_folderu_cplex") ``` gdzie sciezka (na Windowsie) musi byc podawana ze slashami zwyklymi (/) a nie odwrotnymi (\\) ktorych CMake nie lubi
+```set(CPLEX_ROOT_PATH "nowa_sciezka_do_folderu_cplex") ```
+gdzie sciezka (na Windowsie) musi byc podawana ze slashami zwyklymi (/) a nie odwrotnymi (\\) ktorych CMake nie lubi
 
-Jezeli wersje sie roznia, trzeba zmienic nazwe biblioteki w pliku CMake przy podpinaniu bibliotek (.dll) np. zmienic na starsza wersje z cplex2212 na cplex2211 (jak w pracowni UKSW)
+Jezeli wersje CPLEX sie roznia, trzeba zmienic nazwe biblioteki w pliku CMakeLists przy podpinaniu bibliotek (.dll) np. zmienic na starsza wersje z cplex2212 na cplex2211 (jak w pracowni UKSW)
 
+cmake -S . -B build
+
+cmake --build build --config Release
