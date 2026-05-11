@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?><project>
+    	
+    <version>1.0</version>
+    	
+    <configs>
+        		
+        <config default="true" name="Configuration1" category="opl">
+            			
+            <ref name="Dystro.mod" type="model">
+			</ref>
+            			
+            <ref name="Dystro.ops" type="setting">
+			</ref>
+            			
+            <ref name="Dystro.dat" type="data">
+			</ref>
+            		
+        </config>
+        	
+    </configs>
+    	
+
+</project>

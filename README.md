@@ -1,6 +1,7 @@
 # DystroCPLEX
 To repozytorium implementuje w narzedziu CPLEX (w C++ z wykorzystaniem Concert API) problem "Distribution 1" z ksiazki Williamsa (rozdzialy 12.19, 13.19, 14.19).
 
+W folderze opl mozna znalezc takze rozwiazanie zaimplementowane w jezyku OPL z ktorego korzysta CPLEX IDE
 # Pobieranie
 ```git clone https://github.com/Kacper79/DystroCPLEX.git```
 

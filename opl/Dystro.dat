@@ -1,0 +1,115 @@
+/*********************************************
+ * OPL 22.1.2.0 Data
+ * Author: Kacper79
+ * Creation Date: 16 Mar 2026 at 20:01:49
+ *********************************************/
+Factories = {"Liverpool", "Brighton"};
+Depots    = {"Newcastle", "Birmingham", "London", "Exeter"};
+Customers = {"C1", "C2", "C3", "C4", "C5", "C6"};
+
+FD = {
+  <"Liverpool","Newcastle">,
+  <"Liverpool","Birmingham">,
+  <"Liverpool","London">,
+  <"Liverpool","Exeter">,
+  <"Brighton","Birmingham">,
+  <"Brighton","London">,
+  <"Brighton","Exeter">
+};
+
+FC = {
+  <"Liverpool","C1">,
+  <"Brighton","C1">,
+  <"Liverpool","C3">,
+  <"Liverpool","C4">,
+  <"Liverpool","C6">
+};
+
+DC = {
+  <"Birmingham","C1">,
+
+  <"Newcastle","C2">,
+  <"Birmingham","C2">,
+  <"London","C2">,
+
+  <"Newcastle","C3">,
+  <"Birmingham","C3">,
+  <"London","C3">,
+  <"Exeter","C3">,
+
+  <"Newcastle","C4">,
+  <"Birmingham","C4">,
+  <"Exeter","C4">,
+
+  <"Birmingham","C5">,
+  <"London","C5">,
+  <"Exeter","C5">,
+
+  <"Newcastle","C6">,
+  <"London","C6">,
+  <"Exeter","C6">
+};
+
+capF = [
+  150000,   // Liverpool
+  200000    // Brighton
+];
+
+capD = [
+   70000,   // Newcastle
+   50000,   // Birmingham
+  100000,   // London
+   40000    // Exeter
+];
+
+dem = [
+  50000,    // C1
+  10000,    // C2
+  40000,    // C3
+  35000,    // C4
+  60000,    // C5
+  20000     // C6
+];
+
+costFD = [
+  0.5,   // Liverpool -> Newcastle
+  0.5,   // Liverpool -> Birmingham
+  1.0,   // Liverpool -> London
+  0.2,   // Liverpool -> Exeter
+  0.3,   // Brighton -> Birmingham
+  0.5,   // Brighton -> London
+  0.2    // Brighton -> Exeter
+];
+
+costFC = [
+  1.0,   // Liverpool -> C1
+  2.0,   // Brighton  -> C1
+  1.5,   // Liverpool -> C3
+  2.0,   // Liverpool -> C4
+  1.0    // Liverpool -> C6
+];
+
+costDC = [
+  1.0,   // Birmingham -> C1
+
+  1.5,   // Newcastle  -> C2
+  0.5,   // Birmingham -> C2
+  1.5,   // London     -> C2
+
+  0.5,   // Newcastle  -> C3
+  0.5,   // Birmingham -> C3
+  2.0,   // London     -> C3
+  0.2,   // Exeter     -> C3
+
+  1.5,   // Newcastle  -> C4
+  1.0,   // Birmingham -> C4
+  1.5,   // Exeter     -> C4
+
+  0.5,   // Birmingham -> C5
+  0.5,   // London     -> C5
+  0.5,   // Exeter     -> C5
+
+  1.0,   // Newcastle  -> C6
+  1.5,   // London     -> C6
+  1.5    // Exeter     -> C6
+];
